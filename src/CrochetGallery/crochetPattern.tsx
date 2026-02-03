@@ -38,7 +38,7 @@ export function CrochetPattern(){
             </ul>
             </div>
             <img title={`${specificPattern.pattern_name}`} className="w-150 outline-20 rounded-lg outline-solid outline-[#A5B452]" 
-                src={`/${specificPattern.image}`} alt={`${specificPattern.pattern_name}`}/>
+                src={`/FreeCrochetPatterns/${specificPattern.image}`} alt={`${specificPattern.pattern_name}`}/>
         </div>
     )
 }
