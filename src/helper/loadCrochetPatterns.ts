@@ -15,7 +15,7 @@ export function loadCrochetData(){
   const [data, setData] = useState<CrochetData[]>([]);
 
     useEffect(() => {
-      fetch('/data.json').then(response => response.json()).then((result: CrochetData[]) => setData(result)).catch(err => console.log('error: ', err))
+      fetch('/FreeCrochetPatterns/data.json').then(response => response.json()).then((result: CrochetData[]) => setData(result)).catch(err => console.log('error: ', err))
     }, []);
 
     return data;
