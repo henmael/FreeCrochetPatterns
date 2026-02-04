@@ -13,22 +13,27 @@
         "image": "christmas_pumpkin.jpg",
         "skill_level": 1,
         "materials": ["needle", "hook size 4mm", "yarn", "scissors", "pumpkin"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-            "R2: inc in each stitch around (12)",
-            "R3: (1sc, 1inc) around (18)", 
-            "R4: (2sc, 1inc) around (24)", 
-            "R5-R7: sc in each stitch for all rounds (24)", 
-            "R8: (2sc, dec) around (18)",
-            "R9: (1sc, dec) around (12)",
-            "R10: dec around (6)",
-            "Fasten off and close the opening."]
+        "pattern": ["R1: Chain to the pumpkin is covered (when looking at height)", 
+            "R2: 1 dc in each stitch. At end change yarn color",
+            "R3: 1 dc in each stitch", 
+            "R4: 1 dc in each stitch. At end change yarn color", 
+            "For every second round, change yarn color.",
+            "Continue till pattern fits pumpkin in width. Check by wrapping the pattern around the pumpkin. Should be a little tight.",
+            "Close the hole at the bottom of pumpkin",
+            "After closing cut of yarn, and fasten off",
+            "\nThread for closing hole at top of pumpkin:",
+            "R1: chain 100 (if using 2 colors togheter, skip R2)",
+            "R2: sc into every stich. Cut off yarn and fasten off at end of round",
+            "R3: At top of pumpkin thread 'thread' inbetween each stitch, till you reach the stitch closest to the stitch you started in when threading in the 'thread'",
+            "R4: Pull 'thread' to close the pattern around the pumpkin"],
+        "note": "At every end of round chain 1."
     },
     {
         "id": 3, 
         "pattern_name": "Ghosts",
         "image": "ghosts.jpg",
         "skill_level": 3,
-        "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: blush"],
+        "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: blush, pin eyes"],
         "video": {"ghost":"https://www.youtube.com/watch?v=aJeId0PhbTU"}
     },
     {
@@ -36,16 +41,15 @@
         "pattern_name": "Fluffy Bear Hat",
         "image": "bear_hat.jpg",
         "skill_level": 3,
-        "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-                    "R2: inc in each stitch around (12)",
-                    "R3: (1sc, 1inc) around (18)", 
-                    "R4: (2sc, 1inc) around (24)", 
-                    "R5-R7: sc in each stitch for all rounds (24)", 
-                    "R8: (2sc, dec) around (18)",
-                    "R9: (1sc, dec) around (12)",
-                    "R10: dec around (6)",
-                    "Fasten off and close the opening."]
+        "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: pin needles"],
+        "pattern": ["R1: 6 sc crochet in mr", 
+                    "R2: 6 inc in each stitch",
+                    "R3: (1 sc, 1 inc) around", 
+                    "R4: (2 sc, 1 inc) around", 
+                    "R5-R10: sc in each stitch for all rounds", 
+                    "R11: (2sc, dec) around (18)",
+                    "R9: Fasten off"],
+        "note": "PATTERN IS MISSING RECIPE FOR BEAR EARS. COMING SOON!"
     },
     {
         "id": 5, 
@@ -71,7 +75,7 @@
         "pattern_name": "Christmas Tree & Coasters",
         "image": "christmas_tree_coasters.jpg",
         "skill_level": 4,
-        "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
+        "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: small cylinder box"],
         "video": {"tree": "https://www.youtube.com/watch?v=H8c_asFILdg", "coasters": "https://www.youtube.com/watch?v=74JHjdJgPO0"}
     },
     {
@@ -79,7 +83,7 @@
         "pattern_name": "Snow Flake Ornaments",
         "image": "snow_flakes.jpg",
         "skill_level": 3,
-        "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
+        "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: thread or rope"],
         "video": {"snowflake": "https://www.youtube.com/watch?v=5l8CiTU7fHw"}
     },
     {
@@ -88,7 +92,8 @@
         "image": "sun_bag.jpg",
         "skill_level": 4,
         "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"}
+        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
+        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
     },
     {
         "id": 9, 
