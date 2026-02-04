@@ -29,19 +29,7 @@
         "image": "ghosts.jpg",
         "skill_level": 3,
         "materials": ["needle", "hook size 3mm", "yarn", "scissors", "optional: blush"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-            "R2: inc in each stitch around (12)",
-            "R3: (1sc, 1inc) around (18)", 
-            "R4: (2sc, 1inc) around (24)", 
-            "R5-R7: sc in each stitch for all rounds (24)", 
-            "R8: (2sc, dec) around (18)",
-            "R9: (1sc, dec) around (12)",
-            "R10: dec around (6)",
-            "Fasten off and close the opening."],
-        "external_pattern":{
-            "video": "url",
-            "video_pattern_name": "Ghost" 
-        } 
+        "video": {"ghost":"https://www.youtube.com/watch?v=aJeId0PhbTU"}
     },
     {
         "id": 4, 
@@ -84,16 +72,7 @@
         "image": "christmas_tree_coasters.jpg",
         "skill_level": 4,
         "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-                    "R2: inc in each stitch around (12)",
-                    "R3: (1sc, 1inc) around (18)", 
-                    "R4: (2sc, 1inc) around (24)", 
-                    "R5-R7: sc in each stitch for all rounds (24)", 
-                    "R8: (2sc, dec) around (18)",
-                    "R9: (1sc, dec) around (12)",
-                    "R10: dec around (6)",
-                    "Fasten off and close the opening."],
-        "note": "Work in continous rounds. Use a stitch marker to mark the first stitch of each round!"
+        "video": {"tree": "https://www.youtube.com/watch?v=H8c_asFILdg", "coasters": "https://www.youtube.com/watch?v=74JHjdJgPO0"}
     },
     {
         "id": 7, 
@@ -101,37 +80,19 @@
         "image": "snow_flakes.jpg",
         "skill_level": 3,
         "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-                    "R2: inc in each stitch around (12)",
-                    "R3: (1sc, 1inc) around (18)", 
-                    "R4: (2sc, 1inc) around (24)", 
-                    "R5-R7: sc in each stitch for all rounds (24)", 
-                    "R8: (2sc, dec) around (18)",
-                    "R9: (1sc, dec) around (12)",
-                    "R10: dec around (6)",
-                    "Fasten off and close the opening."],
-        "note": "Work in continous rounds. Use a stitch marker to mark the first stitch of each round!"
+        "video": {"snowflake": "https://www.youtube.com/watch?v=5l8CiTU7fHw"}
     },
     {
         "id": 8, 
         "pattern_name": "Sun Bag",
         "image": "sun_bag.jpg",
         "skill_level": 4,
-        "materials": ["needle", "hook size 3mm", "yarn", "scissors"],
-        "pattern": ["R1: 6 sc crochet in magic ring (6)", 
-                    "R2: inc in each stitch around (12)",
-                    "R3: (1sc, 1inc) around (18)", 
-                    "R4: (2sc, 1inc) around (24)", 
-                    "R5-R7: sc in each stitch for all rounds (24)", 
-                    "R8: (2sc, dec) around (18)",
-                    "R9: (1sc, dec) around (12)",
-                    "R10: dec around (6)",
-                    "Fasten off and close the opening."],
-        "note": "Work in continous rounds. Use a stitch marker to mark the first stitch of each round!"
+        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
+        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"}
     },
     {
         "id": 9, 
-        "pattern_name": "Spheel",
+        "pattern_name": "Spheal",
         "image": "spheel.jpg",
         "skill_level": 5,
         "materials": ["needle", "hook size 3mm", "blue yarn", "white yarn", "scissors", "pin eyes"],
@@ -143,7 +104,6 @@
                     "R8: (2sc, dec) around (18)",
                     "R9: (1sc, dec) around (12)",
                     "R10: dec around (6)",
-                    "Fasten off and close the opening."],
-        "note": "Work in continous rounds. Use a stitch marker to mark the first stitch of each round!"
+                    "Fasten off and close the opening."]
     }
 ]
