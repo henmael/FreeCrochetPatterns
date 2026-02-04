@@ -42,9 +42,9 @@ export function CrochetPattern(){
                 ) : (
                     <>
                         <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Youtube video patterns for...</p>
-                        <ol className="text-left mb-10">
+                        <ol className="text-left text-md sm:text-2xl mb-10">
                             {Object.entries(specificPattern.video!).map(([video_name, url]) => (
-                                <li><a href={`${url}`} target="_blank">{video_name}</a></li>
+                                <li className="text-center sm:text-left w-120"><a href={`${url}`} target="_blank">{video_name}</a></li>
                             ))}
                         </ol>
                     </>
