@@ -7,8 +7,9 @@ export interface CrochetData{
   description: string;
   skill_level: number;
   materials: string[];
-  pattern: string[];
+  pattern: string[] | undefined;
   note: string | undefined;
+  video: string[][] | undefined;
 }
 
 export function loadCrochetData(){

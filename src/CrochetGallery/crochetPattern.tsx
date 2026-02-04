@@ -23,21 +23,34 @@ export function CrochetPattern(){
                 {specificPattern.note ? <p className="text-md sm:text-2xl text-bold w-50 sm:w-100 text-[#F374AE]">NOTE: {specificPattern.note}</p> : ''}
                 <Rating name="half-rating" defaultValue={specificPattern.skill_level} precision={1} max={6} readOnly
                 emptyIcon={<StarRateOutlinedIcon style={{color: 'white', opacity: 0.8}}/>}/>
-                <div className="grid justify-center sm:flex gap-2">
+                <div className="grid justify-center sm:justify-normal sm:flex gap-2">
                     {specificPattern.materials.map(material => (
                         <Chip label={material} style={{backgroundColor: '#F374AE', color: "white", fontWeight: "bold", fontSize: "1rem"}} className="w-fit"/>
                     ))}
                 </div>
-                <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Pattern</p>
-                <ul className="text-xl mb-10 sm:text-2xl">
-                    {specificPattern.pattern.map(rounds => (
-                        <li className="text-center sm:text-left">
-                                {rounds}
-                            </li>
-                    ))}
-            </ul>
+                {specificPattern.pattern ? (
+                    <>
+                        <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Pattern</p>
+                        <ul className="whitespace-pre-line text-xl mb-10 sm:text-2xl">
+                        {specificPattern.pattern.map(rounds => (
+                                <li className="text-center sm:text-left w-120">
+                                        {rounds}
+                                    </li>
+                            ))}
+                        </ul>
+                    </>
+                ) : (
+                    <>
+                        <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Youtube video patterns for...</p>
+                        <ol className="text-left">
+                            {Object.entries(specificPattern.video!).map(([video_name, url]) => (
+                                <li><a href={`${url}`} target="_blank">{video_name}</a></li>
+                            ))}
+                        </ol>
+                    </>
+                )}
             </div>
-            <img title={`${specificPattern.pattern_name}`} className="w-50 sm:w-100 outline-20 rounded-lg outline-solid outline-[#A5B452]" 
+            <img title={`${specificPattern.pattern_name}`} className="w-50 sm:w-100 sm:h-150 outline-20 rounded-lg outline-solid outline-[#A5B452]" 
                 src={`/FreeCrochetPatterns/${specificPattern.image}`} alt={`${specificPattern.pattern_name}`}/>
         </div>
     )
