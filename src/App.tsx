@@ -9,9 +9,9 @@ function App() {
 
   return (
     <HashRouter>
-    <div className='flex'>
-        <NavLink to="/"><img title='Home' className='w-25 h-25 flex-1 mt-6 hover:scale-125 transform transition hover:opacity-65' src='cat.png' alt=""/></NavLink>
-        <h1 className='text-8xl flex-1 text-center'>
+    <div className='flex mt-5 text-center'>
+        <NavLink to="/"><img title='Home' className='w-15 h-15 sm:w-25 sm:h-25 flex-1 mt-6 hover:scale-125 transform transition hover:opacity-65' src='cat.png' alt=""/></NavLink>
+        <h1 className='text-2xl sm:text-8xl flex-1 text-center'>
               Free Crochet Patterns
         </h1>
     </div>

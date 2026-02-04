@@ -17,27 +17,27 @@ export function CrochetPattern(){
         return <p>No image...</p>
     
     return (
-        <div className="flex justify-center text-left gap-50 mt-10">
-            <div className="flex flex-col gap-3">
-                <h1 className="text-7xl leading-none w-40">{specificPattern.pattern_name.toUpperCase()}</h1>
-                {specificPattern.note ? <p className="text-2xl text-bold w-100 text-[#F374AE]">NOTE: {specificPattern.note}</p> : ''}
+        <div className="grid justify-items-center justify-center sm:gap-50 mb-10 sm:flex justify-center text-left mt-10">
+            <div className="sm:flex sm:flex-col sm:gap-3 text-center justify-center">
+                <h1 className="text-2xl sm:text-7xl sm:w-30 sm:w-40">{specificPattern.pattern_name.toUpperCase()}</h1>
+                {specificPattern.note ? <p className="text-md sm:text-2xl text-bold w-50 sm:w-100 text-[#F374AE]">NOTE: {specificPattern.note}</p> : ''}
                 <Rating name="half-rating" defaultValue={specificPattern.skill_level} precision={1} max={6} readOnly
                 emptyIcon={<StarRateOutlinedIcon style={{color: 'white', opacity: 0.8}}/>}/>
-                <div className="flex gap-2">
+                <div className="grid justify-center sm:flex gap-2">
                     {specificPattern.materials.map(material => (
                         <Chip label={material} style={{backgroundColor: '#F374AE', color: "white", fontWeight: "bold", fontSize: "1rem"}} className="w-fit"/>
                     ))}
                 </div>
-                <p className="text-3xl mt-10">Pattern</p>
-                <ul className="text-2xl">
+                <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Pattern</p>
+                <ul className="text-xl mb-10 sm:text-2xl">
                     {specificPattern.pattern.map(rounds => (
-                        <li>
+                        <li className="text-center sm:text-left">
                                 {rounds}
                             </li>
                     ))}
             </ul>
             </div>
-            <img title={`${specificPattern.pattern_name}`} className="w-150 outline-20 rounded-lg outline-solid outline-[#A5B452]" 
+            <img title={`${specificPattern.pattern_name}`} className="w-50 sm:w-100 outline-20 rounded-lg outline-solid outline-[#A5B452]" 
                 src={`/FreeCrochetPatterns/${specificPattern.image}`} alt={`${specificPattern.pattern_name}`}/>
         </div>
     )
