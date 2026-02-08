@@ -4,6 +4,18 @@
 @theme{
   --font-kiwi-maru: "Kiwi Maru", sans-serif;
   --font-pixel-sans: "Pixelify Sans", sans-serif;
+
+  --animate-wiggle: wiggle 5s ease-in-out infinite;
+  @keyframes wiggle {
+    0%,
+    100%{
+      transform: scale(1.5)
+    }
+    50%{
+      transform: scale(0.7)
+    }
+  }
 }
+
 
 

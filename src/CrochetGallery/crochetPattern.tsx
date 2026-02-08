@@ -20,7 +20,7 @@ export function CrochetPattern(){
         <div className="grid justify-items-center justify-center sm:gap-50 mb-10 sm:flex sm:text-center mt-10">
             <div className="sm:flex sm:flex-col sm:gap-3 text-center">
                 <h1 className="text-2xl sm:text-7xl sm:w-30 sm:w-40">{specificPattern.pattern_name.toUpperCase()}</h1>
-                {specificPattern.note ? <p className="text-sm mx-auto sm:text-2xl text-bold w-50 sm:w-100 text-[#F374AE]">NOTE: {specificPattern.note}</p> : ''}
+                {specificPattern.note ? <p className="text-sm mx-auto sm:text-2xl text-bold w-50 sm:w-100 text-[#F374AE] animate-wiggle">NOTE: {specificPattern.note}</p> : ''}
                 <Rating name="half-rating" defaultValue={specificPattern.skill_level} precision={1} max={6} readOnly
                 emptyIcon={<StarRateOutlinedIcon style={{color: 'white', opacity: 0.8}}/>}/>
                 <div className="grid justify-center sm:justify-normal sm:flex gap-2">
