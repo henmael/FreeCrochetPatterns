@@ -25,7 +25,7 @@ function App() {
           </CrochetContext.Provider>
       </HashRouter>
       <footer className='text-center content-bottom text-xl m-4'>
-        <a href='https://www.instagram.com/henriette_crochet/' target='_blank'><InstagramIcon style={{fontSize: '2.5em'}}/></a>
+        <a href='https://www.instagram.com/henriette_crochet/' target='_blank' rel="noopener noreferrer"><InstagramIcon style={{fontSize: '2.5em'}}/></a>
         <p>© 2024; Designed by henriette_crochet</p>
       </footer>
     </div>
