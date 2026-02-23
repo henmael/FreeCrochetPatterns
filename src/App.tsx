@@ -33,8 +33,8 @@ function App() {
             <Route path="/pattern/:id" element={<CrochetPattern/>}/>
           </Routes>
           </CrochetContext.Provider>
-          <div className={`text-center text-bold text-lg transform transition hover:scale-110 ${(hasMore) ? 'opacity-100' : 'text-gray opacity-40'}`}>
-            <button className={`border-3 border-solid p-2 rounded-md`} onClick={() => setCurrentPage(currentPage+1)} disabled={!hasMore}>Load More</button>
+          <div className={`text-center text-bold text-lg`}>
+            <button className={`border-3 border-solid p-2 rounded-md transform transition hover:scale-110 disabled:text-gray disabled:opacity-40 disabled:transition disabled:transform disabled:hover:scale-100`} onClick={() => setCurrentPage(currentPage+1)} disabled={!hasMore}>Load More</button>
           </div>
       </HashRouter>
       <footer className='text-center content-bottom text-xl m-4'>
