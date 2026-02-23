@@ -5,7 +5,7 @@ import { loadCrochetData } from './helper/loadCrochetPatterns'
 import { CrochetContext } from './helper/CrochetContext'
 import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useState } from 'react'
 
 function App() {
 
