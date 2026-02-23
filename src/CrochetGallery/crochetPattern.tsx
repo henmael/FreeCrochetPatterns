@@ -1,20 +1,27 @@
-import { useContext } from "react";
+import { useContext, useMemo } from "react";
 import { useParams } from "react-router-dom"
 import { CrochetContext } from "../helper/CrochetContext";
 import { Chip, Rating } from "@mui/material";
 import StarRateOutlinedIcon from '@mui/icons-material/StarRateOutlined';
+import type { CrochetData } from "../helper/loadCrochetPatterns";
 
 export function CrochetPattern(){
     const id = useParams();
 
-      const pattern = useContext(CrochetContext);
+    const pattern = useContext(CrochetContext);
 
-      var specificPattern = pattern.find(i => i.id.toString() == id.id);
-      if (!specificPattern)
-        return <p>Loading pattern...</p>
+    function findPattern(p: CrochetData[]){
+        return p.find(i => i.id.toString() == id.id);
+    }
 
-      if (!specificPattern.image)
-        return <p>No image...</p>
+    const specificPattern = useMemo(() => findPattern(pattern), [pattern])
+
+    if (!pattern)
+    return <p>No pattern...</p>
+
+    if (!specificPattern){
+        return <p>No pattern...</p>
+    }
     
     return (
         <div className="grid justify-items-center justify-center sm:gap-50 mb-10 sm:flex sm:text-center mt-10">
@@ -25,7 +32,7 @@ export function CrochetPattern(){
                 emptyIcon={<StarRateOutlinedIcon style={{color: 'white', opacity: 0.8}}/>}/>
                 <div className="grid justify-center sm:justify-normal sm:flex gap-2">
                     {specificPattern.materials.map(material => (
-                        <Chip label={material} style={{backgroundColor: '#F374AE', color: "white", fontWeight: "bold", fontSize: "1rem"}} className="w-fit"/>
+                        <Chip key={material} label={material} style={{backgroundColor: '#F374AE', color: "white", fontWeight: "bold", fontSize: "1rem"}} className="w-fit"/>
                     ))}
                 </div>
                 {specificPattern.pattern ? (
@@ -33,7 +40,7 @@ export function CrochetPattern(){
                         <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Pattern</p>
                         <ul className="whitespace-pre-line text-md mb-10 sm:text-2xl">
                         {specificPattern.pattern.map(rounds => (
-                                <li className="text-center sm:text-left w-120">
+                                <li key={rounds} className="text-center sm:text-left w-120">
                                         {rounds}
                                     </li>
                             ))}
@@ -44,7 +51,7 @@ export function CrochetPattern(){
                         <p className="text-2xl text-center sm:text-left sm:text-3xl sm:mt-10">Youtube video patterns for...</p>
                         <ol className="text-left text-md sm:text-2xl mb-10">
                             {Object.entries(specificPattern.video!).map(([video_name, url]) => (
-                                <li className="text-center sm:text-left w-120"><a href={`${url}`} target="_blank" rel="noopener noreferrer">{video_name}</a></li>
+                                <li className="text-center sm:text-left w-120"><a href={`${url}`} className="underline" target="_blank" rel="noopener noreferrer">{video_name}</a></li>
                             ))}
                         </ol>
                     </>
