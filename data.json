@@ -111,50 +111,5 @@
                     "R10: dec around (6)",
                     "Fasten off and close the opening."],
         "note": "RECIPE NEEDS TO BE UPDATED. COMING SOON! THIS IS JUST A TESTING TEMPLATE!"
-    },
-       {
-        "id": 10, 
-        "pattern_name": "TESTING",
-        "image": "sun_bag.jpg",
-        "skill_level": 4,
-        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
-        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
-    },
-       {
-        "id": 11, 
-        "pattern_name": "TESTING",
-        "image": "sun_bag.jpg",
-        "skill_level": 4,
-        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
-        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
-    },
-       {
-        "id": 12, 
-        "pattern_name": "TESTING",
-        "image": "sun_bag.jpg",
-        "skill_level": 4,
-        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
-        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
-    },   
-    {
-        "id": 13, 
-        "pattern_name": "TESTING",
-        "image": "sun_bag.jpg",
-        "skill_level": 4,
-        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
-        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
-    },   
-    {
-        "id": 14, 
-        "pattern_name": "TESTING",
-        "image": "sun_bag.jpg",
-        "skill_level": 4,
-        "materials": ["needle", "hook size 5mm", "yarn", "scissors"],
-        "video": {"sun granny square": "https://www.youtube.com/watch?v=aSZ4h8TBBfc"},
-        "note": "MISSING RECIPE FOR SEWING BAG TOGHETER. COMING SOON!"
     }
 ]
