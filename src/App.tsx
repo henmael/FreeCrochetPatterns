@@ -5,7 +5,6 @@ import { loadCrochetData } from './helper/loadCrochetPatterns'
 import { CrochetContext } from './helper/CrochetContext'
 import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { useContext, useMemo, useState } from 'react'
 function App() {
   // const [currentPage, setCurrentPage] = useState(1);
   // const [itemsPerPage] = useState(8);
