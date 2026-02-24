@@ -6,22 +6,8 @@ import { CrochetContext } from './helper/CrochetContext'
 import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
 function App() {
-  // const [currentPage, setCurrentPage] = useState(1);
-  // const [itemsPerPage] = useState(8);
-  
-  // const indexOfLastItem = currentPage * itemsPerPage;
 
   const data = loadCrochetData()
-
-  // const hasMore = indexOfLastItem < data.length
-
-  // const paginationData = data.slice(0, indexOfLastItem)
-
-  // const value = useMemo(() => ({
-  //   setCurrentPage, 
-  //   hasMore, 
-    
-  // }), [currentPage])
 
   const date = new Date();
 
