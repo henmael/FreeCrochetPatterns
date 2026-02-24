@@ -7,22 +7,24 @@ import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { useContext, useMemo, useState } from 'react'
 function App() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(8);
+  // const [currentPage, setCurrentPage] = useState(1);
+  // const [itemsPerPage] = useState(8);
   
-  const indexOfLastItem = currentPage * itemsPerPage;
+  // const indexOfLastItem = currentPage * itemsPerPage;
 
-  const data = useContext(CrochetContext);
+  const data = loadCrochetData()
 
-  const hasMore = indexOfLastItem < data.length
+  // const hasMore = indexOfLastItem < data.length
 
-  const paginationData = data.slice(0, indexOfLastItem)
+  // const paginationData = data.slice(0, indexOfLastItem)
 
-  const value = useMemo(() => ({
-    setCurrentPage, 
-    hasMore, 
+  // const value = useMemo(() => ({
+  //   setCurrentPage, 
+  //   hasMore, 
     
-  }), [currentPage])
+  // }), [currentPage])
+
+  const date = new Date();
 
   return (
     <div className='flex flex-col h-screen justify-between'>
@@ -33,7 +35,7 @@ function App() {
                   Free Crochet Patterns
             </h1>
         </div>
-        <CrochetContext.Provider value={}>
+        <CrochetContext.Provider value={data}>
           <Routes>
             <Route path="/" element={<CrochetGallery/>}/>
             <Route path="/pattern/:id" element={<CrochetPattern/>}/>
@@ -42,7 +44,7 @@ function App() {
       </HashRouter>
       <footer className='text-center content-bottom text-xl m-4'>
         <a href='https://www.instagram.com/henriette_crochet/' target='_blank' rel="noopener noreferrer"><InstagramIcon style={{fontSize: '2.5em'}}/></a>
-        <p>© 2026; Designed by henriette_crochet</p>
+        <p>© {date.getFullYear()}; Designed by henriette_crochet</p>
       </footer>
     </div>
   )

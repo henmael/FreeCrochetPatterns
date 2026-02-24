@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { CrochetContext } from "../helper/CrochetContext";
 
 export function CrochetGallery(){
-
+  const data = useContext(CrochetContext)
 
   if (data == null)
     return
@@ -19,10 +19,10 @@ export function CrochetGallery(){
                 <p className="text-sm sm:text-2xl">{cp.pattern_name}</p>
               </div>
             ))}
-            <div className={`text-center text-bold text-lg`}>
+            {/* <div className={`text-center text-bold text-lg`}>
               <button className={`border-3 border-solid p-2 rounded-md transform transition hover:scale-110 disabled:text-gray disabled:opacity-40 disabled:transition disabled:transform disabled:hover:scale-100`} 
               onClick={() => setCurrentPage(currentPage+1)} disabled={!hasMore}>Load More</button>
-            </div>
+            </div> */}
         </div>
     )
 }
