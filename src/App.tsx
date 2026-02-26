@@ -1,13 +1,12 @@
 import './App.css'
 import { CrochetGallery } from './CrochetGallery/crochetGallery'
-import { HashRouter, NavLink, Route, Routes, useLocation } from 'react-router-dom'
+import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
 import { loadCrochetData } from './helper/loadCrochetPatterns'
 import { CrochetContext } from './helper/CrochetContext'
 import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import { Home } from './Home/home'
-import { colors, Tab, Tabs } from '@mui/material'
-import { useState } from 'react'
+import { Tab, Tabs } from '@mui/material'
 function App() {
 
   const data = loadCrochetData()
@@ -24,9 +23,9 @@ function App() {
                   Free Crochet Patterns
             </h1>
         </div>
-        <Tabs value={location.pathname} sx={{position: 'absolute', marginTop: 18, marginLeft: 1, ".Mui-selected": {color: `white`}, '. MuiTabs-indicator': {backgroundColor: 'white'}}} >
-          <Tab sx={{color: 'white'}} label='Home' value='/' component={NavLink} to='/'/>
-          <Tab sx={{color: 'white'}} label='Gallery' value='/gallery' component={NavLink} to='/gallery' />
+        <Tabs value={location.pathname} sx={{position: 'absolute', marginTop: 18, marginLeft: 1, ".Mui-selected": {color: `white`}}} >
+          <Tab sx={{color: 'white', fontFamily: "Pixelify Sans", fontWeight: 'bold'}} label='Home' value='/' component={NavLink} to='/'/>
+          <Tab sx={{color: 'white', fontFamily: "Pixelify Sans", fontWeight: 'bold'}} label='Gallery' value='/gallery' component={NavLink} to='/gallery' />
         </Tabs>
         <CrochetContext.Provider value={data}>
           <Routes>
