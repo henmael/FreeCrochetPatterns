@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Pixelify+Sans:wght@400..700&display=swap');
 @import "tailwindcss";
 
+
 @theme{
   --font-kiwi-maru: "Kiwi Maru", sans-serif;
   --font-pixel-sans: "Pixelify Sans", sans-serif;

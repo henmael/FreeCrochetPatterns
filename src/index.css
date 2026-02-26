@@ -4,6 +4,10 @@
   font-family: 'Pixelify Sans';
 }
 
+* {
+    cursor: url(/crochet_hook.png) 16 16, auto !important;
+}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
