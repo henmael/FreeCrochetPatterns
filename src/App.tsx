@@ -1,11 +1,10 @@
 import './App.css'
 import { CrochetGallery } from './CrochetGallery/crochetGallery'
-import { NavLink, Route, Routes, useLocation } from 'react-router-dom'
+import { NavLink, Route, Routes } from 'react-router-dom'
 import { loadCrochetData } from './helper/loadCrochetPatterns'
 import { CrochetContext } from './helper/CrochetContext'
 import { CrochetPattern } from './CrochetGallery/crochetPattern'
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Home } from './Home/home'
 
 function App() {
 
